@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Cybersecurity Learning Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Cybersecurity learning dashboard</h1>
+    <p>Track topics across eight areas, test yourself, and keep a daily streak.</p>
+  </div>
+  <button id="reset" type="button" class="ghost">Reset progress</button>
+</header>
+<main>
+  <section class="summary" aria-label="Progress summary">
+    <div><span id="overall">0%</span><small>Overall complete</small></div>
+    <div><span id="done">0</span><small>Topics finished</small></div>
+    <div><span id="streak">0</span><small>Day streak</small></div>
+    <div><span id="best">–</span><small>Best quiz score</small></div>
+  </section>
+
+  <section aria-labelledby="tracks-h">
+    <h2 id="tracks-h">Learning tracks</h2>
+    <div id="tracks" class="tracks"></div>
+  </section>
+
+  <section aria-labelledby="quiz-h" class="quiz">
+    <h2 id="quiz-h">Quick quiz</h2>
+    <div id="quizBox"></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
